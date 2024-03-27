@@ -1,7 +1,7 @@
 import React from 'react'
 import './project.scss';
 import image1 from '../../Assets/bannerImage/Meesho.webp'
-import image2 from '../../Assets/bannerImage/netflix.jpg
+import image2 from '../../Assets/bannerImage/netflix.jpg'
 
 
 const Projects = ({ id }) => {
