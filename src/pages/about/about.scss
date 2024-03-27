@@ -1,0 +1,217 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    text-align: left;
+    background: #2B2B2B;
+
+
+
+    padding-top: 20px;
+    // padding-bottom: 66px;
+    overflow: hidden;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .image-column {
+            width: 30%;
+
+            .profile-pic {
+                display: flex;
+                position: relative;
+                max-width: 100%;
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+
+                @media (max-width: 767px) {
+                    // margin-right: 10px;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    // margin-right: 10px;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    // margin-right: 10px;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 1200px) {
+                    // margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+
+        .main-col {
+            width: 70%;
+
+            h2 {
+                font: 30px/40px 'Open Sans', sans-serif;
+                color: #1af526;
+                font-weight: 700;
+
+                @media (max-width: 767px) {
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    margin-left: 10px;
+                }
+            }
+
+            p {
+                line-height: 30px;
+                color: #fff;
+                text-align: justify;
+                font-family: 'Avant Garde', 'Avantgarde', 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+                font-size: 18px;
+
+                @media (max-width: 767px) {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    margin-right: 10px;
+                }
+
+                @media (min-width: 1200px) {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .contact-details {
+            width: 58.33333%;
+
+            h2 {
+                font: 30px/40px 'Open Sans', sans-serif;
+                color: #1af526;
+                font-weight: 700;
+            }
+        }
+
+        .download {
+            width: 42%;
+
+            .button {
+                display: inline-block;
+                align-items: center;
+                text-align: center;
+                font-weight: 600;
+                padding: 10px 10px;
+                text-decoration: none;
+                border-radius: 100px;
+                margin-top: 5px;
+                height: 30px;
+                color: #000;
+                background: #1af526;
+
+                .download-icon {
+                    margin-right: 5px;
+                }
+
+                &:hover {
+                    background: #11ABB0;
+                    color: #000;
+                }
+
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:visited {
+                color: #fff;
+            }
+
+            &:hover {
+                color: #1af526;
+            }
+
+            &:focus {
+                color: #1af526;
+            }
+        }
+
+        @media (max-width: 767px) {
+            // Apply styles for screens up to 767px width (e.g., smartphones)
+            flex-direction: column;
+            // margin-top: 56px;
+
+            .image-column,
+            .main-col,
+            .contact-details,
+            .download {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .download {
+                .button {
+                    height: 40px;
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            // margin-top: 56px;
+
+            // Apply styles for screens between 768px and 991px width (e.g., tablets)
+            .image-column {
+                width: 30%;
+            }
+
+            .main-col,
+            .contact-details,
+            .download {
+                width: 70%;
+                margin-top: 0;
+            }
+
+            .download {
+                .button {
+                    margin-top: 6px;
+                }
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            // Apply styles for screens between 992px and 1199px width (e.g., larger tablets)
+            // You can customize these styles based on your design needs
+        }
+
+        @media (min-width: 1200px) {
+            // Apply styles for screens larger than 1199px width (e.g., desktops)
+            // You can customize these styles based on your design needs
+        }
+    }
+
+    @media (max-width: 767px) {
+        // margin-top: 56px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 40px;
+    }
+
+
+}
