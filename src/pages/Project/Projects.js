@@ -1,6 +1,7 @@
 import React from 'react'
 import './project.scss';
 import image1 from '../../Assets/bannerImage/Meesho.webp'
+import image2 from '../../Assets/bannerImage/netflix.jpg
 
 
 const Projects = ({ id }) => {
@@ -32,7 +33,7 @@ const Projects = ({ id }) => {
                     <div className="face">
                         <div className='face1'>
                             <div className="content">
-                                <img src={image1} />
+                                <img src={image2} />
                                 <h3>Netflix Clone</h3>
                             </div>
                         </div>
