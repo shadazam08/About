@@ -1,5 +1,4 @@
 import React from 'react';
-import { SpeedInsights } from '@vercel/speed-insights/react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './pages/navbar/Navbar';
@@ -10,7 +9,6 @@ const App = () => {
   return (
     <>
       <Router>
-        <SpeedInsights />
         <div className="App">
           <Navbar />
           <Routes>
