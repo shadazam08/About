@@ -9,7 +9,7 @@ const Header = ({ id }) => {
   return (
 
     <div className='background-image' id={id}>
-      <h1>I'm Shad Azam</h1>
+      <h1>I&apos;m Shad Azam</h1>
       <h3><span><a href="https://bazaar247.in/">Software Engineer @ Bazaar 247 Mcommerce Pvt Ltd</a></span>
       </h3>
       <hr />
