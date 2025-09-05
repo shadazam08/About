@@ -25,7 +25,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 }));
 
 
-const Resumes: React.FC<HeaderProps> = ({ id }) => {
+const ResumesPage: React.FC<HeaderProps> = ({ id }) => {
     return (
         <section className='work' id={id}>
             {/* <hr /> */}
@@ -182,4 +182,4 @@ const Resumes: React.FC<HeaderProps> = ({ id }) => {
     )
 }
 
-export default Resumes
+export default ResumesPage

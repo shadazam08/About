@@ -74,11 +74,11 @@
 "use client";
 
 import React from "react";
-import Abouts from "../about/page";
-import Resumes from "../resume/page";
-import ContactUs from "../contact/page";
+import AboutPage from "../about/page";
+import ResumesPage from "../resume/page";
+import ContactUsPage from "../contact/page";
 import Header from "../components/Header";
-import Projects from "../projects/page";
+import ProjectsPage from "../projects/page";
 
 const AllComo: React.FC = () => {
     return (
@@ -87,16 +87,16 @@ const AllComo: React.FC = () => {
                 <Header />
             </div>
             <div id="about">
-                <Abouts />
+                <AboutPage />
             </div>
             <div id="resume">
-                <Resumes />
+                <ResumesPage />
             </div>
             <div id="projects">
-                <Projects />
+                <ProjectsPage />
             </div>
             <div id="contact">
-                <ContactUs />
+                <ContactUsPage />
             </div>
         </>
     );

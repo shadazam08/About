@@ -10,7 +10,7 @@ interface HeaderProps {
     id?: string;
 }
 
-const Abouts: React.FC<HeaderProps> = ({ id }) => {
+const AboutPage: React.FC<HeaderProps> = ({ id }) => {
     return (
         <section className='about' id={id}>
             <div className='row'>
@@ -54,4 +54,4 @@ const Abouts: React.FC<HeaderProps> = ({ id }) => {
     )
 }
 
-export default Abouts
+export default AboutPage;
