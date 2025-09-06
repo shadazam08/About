@@ -4,12 +4,23 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'AvantGarde Bk BT', 'Segoe UI', 'Roboto', 'Oxygen', 'Nunito', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Libre Baskerville', 'Gabarito', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "AvantGarde Bk BT", "Segoe UI", "Roboto", "Oxygen",
+    "Nunito", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Libre Baskerville", "Gabarito",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Smooth scroll for entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for skipping section due to fixed header */
+.section {
+  scroll-margin-top: 80px; /* apne header ki height ke hisaab se adjust karo */
 }

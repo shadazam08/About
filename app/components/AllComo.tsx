@@ -11,16 +11,16 @@ const AllComo: React.FC = () => {
             <div id="home">
                 <Header />
             </div>
-            <div id="about">
+            <div id="about" className="section">
                 <Abouts />
             </div>
-            <div id="resume">
+            <div id="resume" className="section">
                 <Resumes />
             </div>
-            <div id="projects">
+            <div id="projects" className="section">
                 <Projects />
             </div>
-            <div id="contact">
+            <div id="contact" className="section">
                 <ContactUs />
             </div>
         </>

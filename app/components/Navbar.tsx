@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import Image from "next/image";
 import { pages } from "../data/navbarData";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -69,23 +68,6 @@ const Navbar: React.FC = () => {
     <AppBar position="fixed" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* Desktop logo */}
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#"
-            sx={{
-              mr: 1,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 800,
-              color: "#083f0b",
-              textDecoration: "none",
-            }}
-          >
-            <Image alt="myOwnLogo" width={200} height={40} src={"/logo.png"} />
-          </Typography>
 
           {/* Mobile menu button */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -125,25 +107,6 @@ const Navbar: React.FC = () => {
               ))}
             </Menu>
           </Box>
-
-          {/* Mobile logo */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              color: "#083f0b",
-              textDecoration: "none",
-            }}
-          >
-            <Image alt="myOwnLogo" width={200} height={40} src={"/logo.png"} />
-          </Typography>
 
           {/* Desktop links */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
