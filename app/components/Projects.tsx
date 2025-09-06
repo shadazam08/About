@@ -17,7 +17,7 @@ const Projects: React.FC<HeaderProps> = ({ id }) => {
                 const response = await fetch('/api/getProject');
                 const data = await response.json();
                 setGetData(data);
-                console.log(data); // Log the fetched data
+
             } catch (error) {
                 console.error('Error fetching projects:', error);
             }
