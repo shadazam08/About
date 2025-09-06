@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -25,7 +26,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 }));
 
 
-const ResumesPage: React.FC<HeaderProps> = ({ id }) => {
+const Resumes: React.FC<HeaderProps> = ({ id }) => {
     return (
         <section className='work' id={id}>
             {/* <hr /> */}
@@ -182,4 +183,4 @@ const ResumesPage: React.FC<HeaderProps> = ({ id }) => {
     )
 }
 
-export default ResumesPage
+export default Resumes

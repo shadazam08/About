@@ -6,7 +6,7 @@ interface HeaderProps {
 }
 
 
-const ContactUsPage: React.FC<HeaderProps> = ({ id }) => {
+const ContactUs: React.FC<HeaderProps> = ({ id }) => {
     return (
         <section className="contact" id={id}>
             <div className="row">
@@ -44,4 +44,4 @@ const ContactUsPage: React.FC<HeaderProps> = ({ id }) => {
     )
 }
 
-export default ContactUsPage;
+export default ContactUs

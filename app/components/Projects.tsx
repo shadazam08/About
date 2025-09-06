@@ -8,7 +8,7 @@ interface HeaderProps {
     id?: string;
 }
 
-const ProjectsPage: React.FC<HeaderProps> = ({ id }) => {
+const Projects: React.FC<HeaderProps> = ({ id }) => {
     return (
         <div id={id} className="projectBody">
             <div className="container">
@@ -64,4 +64,4 @@ const ProjectsPage: React.FC<HeaderProps> = ({ id }) => {
     );
 };
 
-export default ProjectsPage;
+export default Projects;

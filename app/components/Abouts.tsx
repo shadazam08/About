@@ -1,8 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
-// import profilePic from '../../Assets/shadazam.jpg'
-// import resume from '../../Assets/resume/Shad_Azam_Resume.pdf';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import './about.scss';
 import Image from 'next/image';
 
@@ -10,7 +8,7 @@ interface HeaderProps {
     id?: string;
 }
 
-const AboutPage: React.FC<HeaderProps> = ({ id }) => {
+const Abouts: React.FC<HeaderProps> = ({ id }) => {
     return (
         <section className='about' id={id}>
             <div className='row'>
@@ -54,4 +52,4 @@ const AboutPage: React.FC<HeaderProps> = ({ id }) => {
     )
 }
 
-export default AboutPage;
+export default Abouts;

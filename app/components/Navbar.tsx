@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Image from "next/image";
