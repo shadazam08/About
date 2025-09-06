@@ -4,7 +4,7 @@
   padding: 30px;
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
@@ -55,13 +55,28 @@
   background: #005bb5;
 }
 
+.logout-button {
+  width: 15%;
+  align-content: flex-end;
+  padding: 12px;
+  background: #ef5e32;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.logout-button:hover {
+  background: #005bb5;
+}
+
 .message {
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
   color: green;
 }
-
 
 .tooltip {
   position: fixed;
@@ -71,15 +86,27 @@
   color: #fff;
   padding: 12px 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   animation: fadeInOut 3s forwards;
   z-index: 1000;
 }
 
 @keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(-10px); }
-  10% { opacity: 1; transform: translateY(0); }
-  90% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-10px); }
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }

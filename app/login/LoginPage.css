@@ -1,0 +1,119 @@
+/* Full screen container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-sizing: border-box;
+  overflow: none;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Title & subtitle */
+.login-card h2 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #6e8efb;
+  outline: none;
+}
+
+/* Button */
+.login-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #6e8efb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #5b73e6;
+}
+
+/* Tooltip for messages */
+.tooltip {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: fadeInOut 3s forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #6e8efb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive small screens */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px 20px;
+  }
+}
