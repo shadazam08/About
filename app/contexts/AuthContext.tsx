@@ -1,5 +1,4 @@
 "use client";
-
 import { createContext, useState, useEffect, ReactNode, useMemo, useCallback } from "react";
 import { useRouter } from "next/navigation";
 
@@ -30,7 +29,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         }
     };
 
-
     useEffect(() => {
         const storeToken = localStorage.getItem("token");
 
@@ -59,8 +57,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         setIsLogin(false);
         router.push("/");
     }, [router]);
-
-
 
     const contextValue = useMemo(
         () => ({ isLogin, login, logout, authLoading, setLogin }),

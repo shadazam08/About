@@ -6,7 +6,7 @@ import "./LoginPage.css";
 // import Link from "next/link";
 
 const LoginPage: React.FC = () => {
-    const { isLogin } = useAuth();
+    const { isLogin, login } = useAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
@@ -36,21 +36,11 @@ const LoginPage: React.FC = () => {
         const data = await respo.json();
         if (data.success) {
             setMessage(data.message);
-            // You can redirect or perform other actions here
-            localStorage.setItem('token', data.token);
-            router.push("/projects");
-            // For example, redirect to a dashboard page
-            // window.location.href = '/dashboard';
+            login(data?.token);
         }
         else {
             setMessage(data.message);
         }
-
-        // Handle successful login, e.g., redirect or store token
-
-
-        // Simulate login
-        // setMessage(`Logged in as ${email}`);
         setTimeout(() => setMessage(""), 3000);
     };
 
