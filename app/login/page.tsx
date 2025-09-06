@@ -38,6 +38,7 @@ const LoginPage: React.FC = () => {
             setMessage(data.message);
             // You can redirect or perform other actions here
             localStorage.setItem('token', data.token);
+            router.push("/projects");
             // For example, redirect to a dashboard page
             // window.location.href = '/dashboard';
         }
@@ -55,7 +56,7 @@ const LoginPage: React.FC = () => {
 
     return (
         <div className="login-page">
-            
+
             <div className="login-card">
                 <h2>Welcome Back</h2>
                 <p className="subtitle">Sign in to your account</p>

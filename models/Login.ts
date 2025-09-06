@@ -25,7 +25,7 @@ const loginSchema = new mongoesse.Schema(
       type: String,
       required: true,
       // In a real application, ensure passwords are hashed before storage
-      select: false, // Do not return password field by default
+      // select: false, // Do not return password field by default
     },
     createdAt: {
       type: Date,
@@ -45,7 +45,7 @@ loginSchema.virtual("login_id").get(function () {
 });
 
 // 👇 Important: force refresh model if schema updated
-// delete mongoesse.models.Project;
-// const Project = mongoesse.model("Project", projectSchema);
-const Login = mongoesse.models.Login || mongoesse.model("Login", loginSchema);
+delete mongoesse.models.Login;
+const Login = mongoesse.model("Login", loginSchema);
+// const Login = mongoesse.models.Login || mongoesse.model("Login", loginSchema);
 export default Login;
