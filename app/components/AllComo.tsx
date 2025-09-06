@@ -79,12 +79,15 @@ import ResumesPage from "../resume/page";
 import ContactUsPage from "../contact/page";
 import Header from "../components/Header";
 import ProjectsPage from "../projects/page";
+import Link from "next/link";
 
 const AllComo: React.FC = () => {
     return (
         <>
             <div id="home">
-                <Header />
+                <Link href="/">
+                    <Header />
+                </Link>
             </div>
             <div id="about">
                 <AboutPage />
