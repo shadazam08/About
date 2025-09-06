@@ -1,11 +1,11 @@
 "use client";
-import { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { useRouter } from "next/navigation";
 import "./UploadProject.css"; // We'll create this CSS file
 
 const UploadProject: React.FC = () => {
-  const { logout, isLogin } = useAuth();
+  const { logout, isLogin, authLoading } = useAuth();
   const [projectName, setProjectName] = useState<string>("");
   const [projectDescription, setProjectDescription] = useState<string>("");
   const [projectLink, setProjectLink] = useState<string>("");
@@ -15,10 +15,11 @@ const UploadProject: React.FC = () => {
   const router = useRouter()
 
   useEffect(() => {
+    if (authLoading) return
     if (!isLogin) {
       router.push('/')
     }
-  }, [isLogin, router])
+  }, [router, authLoading, isLogin])
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
